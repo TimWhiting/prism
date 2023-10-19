@@ -1,0 +1,123 @@
+fun main()
+  val x:int = 0
+  val y:string = ""
+  val z:char = ''
+  val x:bool = True
+  initially(0)
+  finally() fn(x) throw("x")
+  for(0, 1) fn(x)
+    println(x)
+    throw(x.show)
+  while {x == 0} 
+    print("0")
+
+----------------------------------------------------
+
+[
+	["keyword", "fun"],
+	["function-call", "main"],
+	["punctuation", "("],
+	["punctuation", ")"],
+
+	["keyword", "val"],
+	" x",
+	["class-name", [
+		["punctuation", ":"],
+		["types", [
+			["simple", "int"]
+		]]
+	]],
+	["operator", "="],
+	["number", "0"],
+
+	["keyword", "val"],
+	" y",
+	["class-name", [
+		["punctuation", ":"],
+		["types", [
+			["simple", "string"]
+		]]
+	]],
+	["operator", "="],
+	["string", "\"\""],
+
+	["keyword", "val"],
+	" z",
+	["class-name", [
+		["punctuation", ":"],
+		["types", [
+			["simple", "char"]
+		]]
+	]],
+	["operator", "="],
+	" ''\r\n  ",
+
+	["keyword", "val"],
+	" x",
+	["class-name", [
+		["punctuation", ":"],
+		["types", [
+			["simple", "bool"]
+		]]
+	]],
+	["operator", "="],
+	["class-name", "True"],
+
+	["builtin", "initially"],
+	["punctuation", "("],
+	["number", "0"],
+	["punctuation", ")"],
+
+	["builtin", "finally"],
+	["punctuation", "("],
+	["punctuation", ")"],
+	["keyword", "fn"],
+	["punctuation", "("],
+	"x",
+	["punctuation", ")"],
+	["builtin", "throw"],
+	["punctuation", "("],
+	["string", "\"x\""],
+	["punctuation", ")"],
+
+	["builtin", "for"],
+	["punctuation", "("],
+	["number", "0"],
+	["punctuation", ","],
+	["number", "1"],
+	["punctuation", ")"],
+	["keyword", "fn"],
+	["punctuation", "("],
+	"x",
+	["punctuation", ")"],
+
+	["builtin", "println"],
+	["punctuation", "("],
+	"x",
+	["punctuation", ")"],
+
+	["builtin", "throw"],
+	["punctuation", "("],
+	"x",
+	["function", [
+		["punctuation", "."],
+		"show"
+	]],
+	["punctuation", ")"],
+
+	["builtin", "while"],
+	["punctuation", "{"],
+	"x ",
+	["operator", "=="],
+	["number", "0"],
+	["punctuation", "}"],
+
+	["builtin", "print"],
+	["punctuation", "("],
+	["string", "\"0\""],
+	["punctuation", ")"]
+]
+
+----------------------------------------------------
+
+Some builtin types and functions

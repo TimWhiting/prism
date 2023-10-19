@@ -1,0 +1,255 @@
+named scoped effect file<s::S> 
+  fun read-line() : string   // `: (f : file<s>) -> scope<s> string`
+
+
+// a handler instance for files
+fun file(fname : string, action : forall<s> file<s> -> <scope<s>|e> a ) : e a 
+  var i := 0
+
+fun insert( after : list<(tree<a>,int)>, t : (tree<a>,int), before : list<(tree<a>,int)> ) : div tree<a>
+
+fun build( depth : int, xs : list1<(a,ref<h,int>)> ) : <read<h>,div> (tree<a>,list<(a,ref<h,int>)>)
+
+----------------------------------------------------
+
+[
+	["keyword", "named"],
+	["keyword", "scoped"],
+	["keyword", "effect"],
+	["class-name", [
+		["types", [
+			["simple", "file"],
+			["punctuation", "<"],
+			["simple", "s"]
+		]],
+		"::",
+		["types", [
+			["simple", "S"],
+			["punctuation", ">"]
+		]]
+	]],
+
+	["keyword", "fun"],
+	["function-call", "read-line"],
+	["punctuation", "("],
+	["punctuation", ")"],
+	["class-name", [
+		["punctuation", ":"],
+		["types", [
+			["simple", "string"]
+		]]
+	]],
+	["comment", "// `: (f : file<s>) -> scope<s> string`"],
+
+	["comment", "// a handler instance for files"],
+
+	["keyword", "fun"],
+	["function-call", "file"],
+	["punctuation", "("],
+	"fname ",
+	["class-name", [
+		["punctuation", ":"],
+		["types", [
+			["simple", "strin"]
+		]]
+	]],
+	["class-name", [
+		["types", [
+			["simple", "g"],
+			["punctuation", ","],
+			["simple", "action"]
+		]]
+	]],
+	["class-name", [
+		["punctuation", ":"],
+		["types", [
+			["simple", "forall"],
+			["punctuation", "<"],
+			["simple", "s"],
+			["punctuation", ">"],
+			["simple", "file"],
+			["punctuation", "<"],
+			["simple", "s"],
+			["punctuation", ">"],
+			["simple", "-"],
+			["punctuation", ">"],
+			["punctuation", "<"],
+			["simple", "scope"],
+			["punctuation", "<"],
+			["simple", "s"],
+			["punctuation", ">"],
+			["punctuation", "|"],
+			["simple", "e"],
+			["punctuation", ">"],
+			["simple", "a"],
+			["punctuation", ")"]
+		]]
+	]],
+	["class-name", [
+		["punctuation", ":"],
+		["types", [
+			["simple", "e"],
+			["simple", "a"]
+		]]
+	]],
+
+	["keyword", "var"],
+	" i ",
+	["operator", ":="],
+	["number", "0"],
+
+	["keyword", "fun"],
+	["function-call", "insert"],
+	["punctuation", "("],
+	" after ",
+	["class-name", [
+		["punctuation", ":"],
+		["types", [
+			["simple", "list"],
+			["punctuation", "<"],
+			["punctuation", "("],
+			["simple", "tree"],
+			["punctuation", "<"],
+			["simple", "a"],
+			["punctuation", ">"],
+			["punctuation", ","],
+			["simple", "int"],
+			["punctuation", ")"]
+		]]
+	]],
+	["class-name", [
+		["types", [
+			["punctuation", ">"],
+			["punctuation", ","],
+			["simple", "t"]
+		]]
+	]],
+	["class-name", [
+		["punctuation", ":"],
+		["types", [
+			["punctuation", "("],
+			["simple", "tree"],
+			["punctuation", "<"],
+			["simple", "a"],
+			["punctuation", ">"],
+			["punctuation", ","],
+			["simple", "int"]
+		]]
+	]],
+	["class-name", [
+		["types", [
+			["punctuation", ")"],
+			["punctuation", ","],
+			["simple", "before"]
+		]]
+	]],
+	["class-name", [
+		["punctuation", ":"],
+		["types", [
+			["simple", "list"],
+			["punctuation", "<"],
+			["punctuation", "("],
+			["simple", "tree"],
+			["punctuation", "<"],
+			["simple", "a"]
+		]]
+	]],
+	["class-name", [
+		["types", [
+			["punctuation", ">"],
+			["punctuation", ","],
+			["simple", "int"],
+			["punctuation", ")"],
+			["punctuation", ">"],
+			["punctuation", ")"]
+		]]
+	]],
+	["class-name", [
+		["punctuation", ":"],
+		["types", [
+			["simple", "div"],
+			["simple", "tree"],
+			["punctuation", "<"],
+			["simple", "a"],
+			["punctuation", ">"]
+		]]
+	]],
+
+	["keyword", "fun"],
+	["function-call", "build"],
+	["punctuation", "("],
+	" depth ",
+	["class-name", [
+		["punctuation", ":"],
+		["types", [
+			["simple", "in"]
+		]]
+	]],
+	["class-name", [
+		["types", [
+			["simple", "t"],
+			["punctuation", ","],
+			["simple", "xs"]
+		]]
+	]],
+	["class-name", [
+		["punctuation", ":"],
+		["types", [
+			["simple", "list1"],
+			["punctuation", "<"],
+			["punctuation", "("],
+			["simple", "a"],
+			["punctuation", ","],
+			["simple", "ref"],
+			["punctuation", "<"]
+		]]
+	]],
+	["class-name", [
+		["types", [
+			["simple", "h"],
+			["punctuation", ","],
+			["simple", "int"],
+			["punctuation", ">"],
+			["punctuation", ")"],
+			["punctuation", ">"],
+			["punctuation", ")"]
+		]]
+	]],
+	["class-name", [
+		["punctuation", ":"],
+		["types", [
+			["punctuation", "<"],
+			["simple", "read"],
+			["punctuation", "<"],
+			["simple", "h"],
+			["punctuation", ">"],
+			["punctuation", ","],
+			["simple", "div"],
+			["punctuation", ">"],
+			["punctuation", "("],
+			["simple", "tree"],
+			["punctuation", "<"],
+			["simple", "a"],
+			["punctuation", ">"],
+			["punctuation", ","],
+			["simple", "list"],
+			["punctuation", "<"],
+			["punctuation", "("],
+			["simple", "a"],
+			["punctuation", ","],
+			["simple", "ref"],
+			["punctuation", "<"]
+		]]
+	]],
+	["class-name", [
+		["types", [
+			["simple", "h"],
+			["punctuation", ","],
+			["simple", "int"],
+			["punctuation", ">"],
+			["punctuation", ")"],
+			["punctuation", ">"],
+			["punctuation", ")"]
+		]]
+	]]
+]

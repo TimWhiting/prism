@@ -1,0 +1,48 @@
+fun main()
+  x() ++ y(a() ++ b() ++ c.doSomething() ++ x.y.z)
+
+----------------------------------------------------
+
+[
+	["keyword", "fun"],
+	["function-call", "main"],
+	["punctuation", "("],
+	["punctuation", ")"],
+
+	["function-call", "x"],
+	["punctuation", "("],
+	["punctuation", ")"],
+	["operator", "++"],
+	["function-call", "y"],
+	["punctuation", "("],
+	["function-call", "a"],
+	["punctuation", "("],
+	["punctuation", ")"],
+	["operator", "++"],
+	["function-call", "b"],
+	["punctuation", "("],
+	["punctuation", ")"],
+	["operator", "++"],
+	" c",
+	["function", [
+		["punctuation", "."],
+		"doSomething"
+	]],
+	["punctuation", "("],
+	["punctuation", ")"],
+	["operator", "++"],
+	" x",
+	["function", [
+		["punctuation", "."],
+		"y"
+	]],
+	["function", [
+		["punctuation", "."],
+		"z"
+	]],
+	["punctuation", ")"]
+]
+
+----------------------------------------------------
+
+Function calls and definitions

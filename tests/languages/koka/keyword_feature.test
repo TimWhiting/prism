@@ -1,0 +1,285 @@
+fun x()
+fn() x
+type x
+struct x
+value type x
+alias x = y
+pub value type x
+pub value struct x
+value struct x
+pub fun s()
+named scoped effect s
+pub named scoped effect s
+pub effect s
+effect<e> fun anEffect(): ()
+effect val x: int
+module named
+import std/os
+extern fun hello()
+inline fun hello()
+pub inline fun hello()
+fip fun hello()
+fbip(1) fun hello()
+fbip fun hello()
+tail fun hello()
+fun main()
+  if x == 0 then 1
+  elif y == 1 then 2
+  else 3
+  with handler
+    x
+  with x <- named handler
+    x
+  handle(x)
+    fun x()
+  var x := 0
+  val x = 0
+
+----------------------------------------------------
+
+[
+	["keyword", "fun"],
+	["function-call", "x"],
+	["punctuation", "("],
+	["punctuation", ")"],
+
+	["keyword", "fn"],
+	["punctuation", "("],
+	["punctuation", ")"],
+	" x\r\n",
+
+	["keyword", "type"],
+	["class-name", [
+		["types", [
+			["simple", "x"]
+		]]
+	]],
+
+	["keyword", "struct"],
+	["class-name", [
+		["types", [
+			["simple", "x"]
+		]]
+	]],
+
+	["keyword", "value"],
+	["keyword", "type"],
+	["class-name", [
+		["types", [
+			["simple", "x"]
+		]]
+	]],
+
+	["keyword", "alias"],
+	["class-name", [
+		["types", [
+			["simple", "x"]
+		]]
+	]],
+	["operator", "="],
+	["class-name", [
+		["types", [
+			["simple", "y"]
+		]]
+	]],
+
+	["keyword", "pub"],
+	["keyword", "value"],
+	["keyword", "type"],
+	["class-name", [
+		["types", [
+			["simple", "x"]
+		]]
+	]],
+
+	["keyword", "pub"],
+	["keyword", "value"],
+	["keyword", "struct"],
+	["class-name", [
+		["types", [
+			["simple", "x"]
+		]]
+	]],
+
+	["keyword", "value"],
+	["keyword", "struct"],
+	["class-name", [
+		["types", [
+			["simple", "x"]
+		]]
+	]],
+
+	["keyword", "pub"],
+	["keyword", "fun"],
+	["function-call", "s"],
+	["punctuation", "("],
+	["punctuation", ")"],
+
+	["keyword", "named"],
+	["keyword", "scoped"],
+	["keyword", "effect"],
+	["class-name", [
+		["types", [
+			["simple", "s"]
+		]]
+	]],
+
+	["keyword", "pub"],
+	["keyword", "named"],
+	["keyword", "scoped"],
+	["keyword", "effect"],
+	["class-name", [
+		["types", [
+			["simple", "s"]
+		]]
+	]],
+
+	["keyword", "pub"],
+	["keyword", "effect"],
+	["class-name", [
+		["types", [
+			["simple", "s"]
+		]]
+	]],
+
+	["keyword", "effect"],
+	["operator", "<"],
+	"e",
+	["operator", ">"],
+	["keyword", "fun"],
+	["function-call", "anEffect"],
+	["punctuation", "("],
+	["punctuation", ")"],
+	["class-name", [
+		["punctuation", ":"],
+		["types", [
+			["punctuation", "("],
+			["punctuation", ")"]
+		]]
+	]],
+
+	["keyword", "effect"],
+	["class-name", [
+		["types", [
+			["simple", "val"]
+		]]
+	]],
+	" x",
+	["class-name", [
+		["punctuation", ":"],
+		["types", [
+			["simple", "int"]
+		]]
+	]],
+
+	["keyword", "module"],
+	["keyword", "named"],
+
+	["keyword", "import"],
+	" std/os\r\n",
+
+	["keyword", "extern"],
+	["keyword", "fun"],
+	["function-call", "hello"],
+	["punctuation", "("],
+	["punctuation", ")"],
+
+	["keyword", "inline"],
+	["keyword", "fun"],
+	["function-call", "hello"],
+	["punctuation", "("],
+	["punctuation", ")"],
+
+	["keyword", "pub"],
+	["keyword", "inline"],
+	["keyword", "fun"],
+	["function-call", "hello"],
+	["punctuation", "("],
+	["punctuation", ")"],
+
+	["keyword", "fip"],
+	["keyword", "fun"],
+	["function-call", "hello"],
+	["punctuation", "("],
+	["punctuation", ")"],
+
+	["keyword", "fbip"],
+	["punctuation", "("],
+	["number", "1"],
+	["punctuation", ")"],
+	["keyword", "fun"],
+	["function-call", "hello"],
+	["punctuation", "("],
+	["punctuation", ")"],
+
+	["keyword", "fbip"],
+	["keyword", "fun"],
+	["function-call", "hello"],
+	["punctuation", "("],
+	["punctuation", ")"],
+
+	["keyword", "tail"],
+	["keyword", "fun"],
+	["function-call", "hello"],
+	["punctuation", "("],
+	["punctuation", ")"],
+
+	["keyword", "fun"],
+	["function-call", "main"],
+	["punctuation", "("],
+	["punctuation", ")"],
+
+	["keyword", "if"],
+	" x ",
+	["operator", "=="],
+	["number", "0"],
+	["keyword", "then"],
+	["number", "1"],
+
+	["keyword", "elif"],
+	" y ",
+	["operator", "=="],
+	["number", "1"],
+	["keyword", "then"],
+	["number", "2"],
+
+	["keyword", "else"],
+	["number", "3"],
+
+	["keyword", "with"],
+	["keyword", "handler"],
+
+	"\r\n    x\r\n  ",
+
+	["keyword", "with"],
+	" x ",
+	["operator", "<-"],
+	["keyword", "named"],
+	["keyword", "handler"],
+
+	"\r\n    x\r\n  ",
+
+	["keyword", "handle"],
+	["punctuation", "("],
+	"x",
+	["punctuation", ")"],
+
+	["keyword", "fun"],
+	["function-call", "x"],
+	["punctuation", "("],
+	["punctuation", ")"],
+
+	["keyword", "var"],
+	" x ",
+	["operator", ":="],
+	["number", "0"],
+
+	["keyword", "val"],
+	" x ",
+	["operator", "="],
+	["number", "0"]
+]
+
+----------------------------------------------------
+
+Checks for keywords and keyword combos.

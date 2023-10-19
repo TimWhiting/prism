@@ -1,0 +1,15 @@
+// This is a comment
+/// So is This
+/* As well as this */
+
+----------------------------------------------------
+
+[
+	["comment", "// This is a comment"],
+	["comment", "/// So is This"],
+	["comment", "/* As well as this */"]
+]
+
+----------------------------------------------------
+
+Checks for comments.
